@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString *url = @"http://www.dgm1802.wix.com/ioshome";
+    NSURL *pageurl = [NSURL URLWithString:url];
+    NSURLRequest *requestObjurl = [NSURLRequest requestWithURL:pageurl];
+    [_ioshome loadRequest:requestObjurl];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
